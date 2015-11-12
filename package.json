@@ -13,12 +13,11 @@
     "node": "0.12.7"
   },
   "private": true,
-  "main": "dist/index",
+  "main": "dist",
   "dependencies": {
     "babel": "5.8.21",
     "react": "0.12.2",
-    "sol-style-guide": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/sol-style-guide.git#19b3e8498d6c79254bbc6209a77d4c257d6acaf7",
-    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130"
+    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130",
   },
   "devDependencies": {},
   "scripts": {
