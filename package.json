@@ -23,6 +23,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node start.js",
-    "install": "node ./node_modules/babel/bin/babel lib --out-dir dist"
+    "install": "npm run makedist",
+    "makedist": "node ./node_modules/babel/bin/babel lib --out-dir dist"
   }
 }
