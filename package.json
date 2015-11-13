@@ -17,7 +17,7 @@
   "dependencies": {
     "babel": "5.8.21",
     "react": "0.12.2",
-    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130",
+    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130"
   },
   "devDependencies": {},
   "scripts": {
