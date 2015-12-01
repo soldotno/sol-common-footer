@@ -1,6 +1,6 @@
 {
   "name": "sol-common-footer",
-  "description": "SOLs common footer.",
+  "description": "SOLs common react footer.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -10,19 +10,32 @@
     "url": "https://github.com/soldotno/sol-common-footer/issues"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "5.1.0"
   },
   "private": true,
   "main": "dist",
   "dependencies": {
-    "babel": "5.8.21",
-    "react": "0.12.2",
-    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130"
+    "babel-cli": "6.2.0",
+    "babel-preset-es2015": "6.1.18",
+    "babel-preset-react": "6.1.18",
+    "babel-preset-stage-0": "6.1.18",
+    "is-client": "0.0.2",
+    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#a5c013073f10edffb63d67b6aefa96d8772ce130",
+    "superagent": "1.4.0",
+    "url-join": "0.0.1"
+  },
+  "peerDependencies": {
+    "react": ">= 0.12.2"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node start.js",
-    "install": "npm run makedist",
-    "makedist": "node ./node_modules/babel/bin/babel lib --out-dir dist"
+    "makedist": "node ./node_modules/babel-cli/bin/babel lib --out-dir dist"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
   }
 }
