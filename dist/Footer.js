@@ -1,5 +1,7 @@
 'use strict';
 
+function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
+
 var React = require('react');
 var isBrowser = require('is-client');
 
@@ -30,6 +32,10 @@ var Footer = React.createClass({
   },
   cleanData: function cleanData(data) {
     var mailtoPrefix = 'FJERNDETTE';
+
+    if (!data.footer_vaktsjef) {
+      data.footer_vaktsjef = this.props.footer_vaktsjef;
+    }
     var headOfDesk = data.footer_vaktsjef.split('|');
 
     return {
@@ -65,8 +71,10 @@ var Footer = React.createClass({
         console.log('ERR: ', err);
         return;
       }
-      var cleanedData = _this.cleanData(result.site);
-      _this.setState(cleanedData);
+      if (_typeof(result.site) === 'object') {
+        var cleanedData = _this.cleanData(result.site);
+        _this.setState(cleanedData);
+      }
     });
   },
   componentDidMount: function componentDidMount() {
