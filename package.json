@@ -20,7 +20,7 @@
     "babel-preset-react": "6.1.18",
     "babel-preset-stage-0": "6.1.18",
     "is-client": "0.0.2",
-    "solskinn-common": "git+https://9452ea7edf87959f49d25e1a6ceb487b7730ab7f:x-oauth-basic@github.com/soldotno/solskinn-common.git#88d9852be4087240d35b50918ab14f697f1b05c6",
+    "solskinn-common": "git+https://b90885428f01515b49cedc4b52074ae5b13fd64e:x-oauth-basic@github.com/soldotno/solskinn-common.git#88d9852be4087240d35b50918ab14f697f1b05c6",
     "superagent": "1.4.0",
     "url-join": "0.0.1"
   },
