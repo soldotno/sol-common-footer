@@ -1,6 +1,6 @@
 'use strict';
 
-function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 var React = require('react');
 var isBrowser = require('is-client');
@@ -31,7 +31,6 @@ var Footer = React.createClass({
     return this.cleanData(this.props);
   },
   cleanData: function cleanData(data) {
-    var mailtoPrefix = 'FJERNDETTE';
 
     if (!data.footer_vaktsjef) {
       data.footer_vaktsjef = this.props.footer_vaktsjef;
@@ -41,15 +40,15 @@ var Footer = React.createClass({
     return {
       editorInChief: {
         name: data.footer_ansvarlig_redaktor_navn,
-        email: mailtoPrefix + data.footer_ansvarlig_redaktor_epost
+        email: data.footer_ansvarlig_redaktor_epost
       },
       editor: {
         name: data.footer_redaktor_navn,
-        email: mailtoPrefix + data.footer_redaktor_epost
+        email: data.footer_redaktor_epost
       },
       headOfDesk: {
         name: headOfDesk[0],
-        email: mailtoPrefix + headOfDesk[1]
+        email: headOfDesk[1]
       },
       address: data.footer_adresse,
       url: {
@@ -88,6 +87,7 @@ var Footer = React.createClass({
     var address = _state.address;
     var url = _state.url;
 
+
     return React.createElement(
       'footer',
       { className: classMap.footer },
@@ -114,7 +114,7 @@ var Footer = React.createClass({
           React.createElement(
             'h3',
             { className: classMap.description },
-            'Ansvarlig redaktør:'
+            'Ansvarlig redaktør og adm dir:'
           ),
           React.createElement(
             'h3',
@@ -123,24 +123,6 @@ var Footer = React.createClass({
               'a',
               { href: 'mailto:' + editorInChief.email },
               editorInChief.name
-            )
-          )
-        ),
-        React.createElement(
-          'li',
-          null,
-          React.createElement(
-            'h3',
-            { className: classMap.description },
-            'Redaktør:'
-          ),
-          React.createElement(
-            'h3',
-            { className: classMap.content },
-            React.createElement(
-              'a',
-              { href: 'mailto:' + editor.email },
-              editor.name
             )
           )
         ),
