@@ -1,7 +1,7 @@
 {
   "name": "sol-common-footer",
   "description": "SOLs common react footer.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:soldotno/sol-common-footer.git"
