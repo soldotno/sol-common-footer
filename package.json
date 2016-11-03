@@ -10,7 +10,7 @@
     "url": "https://github.com/soldotno/sol-common-footer/issues"
   },
   "engines": {
-    "node": "5.1.0"
+    "node": ">5.1.0"
   },
   "private": true,
   "main": "dist",
