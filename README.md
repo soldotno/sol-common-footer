@@ -1,6 +1,8 @@
 sol-common-footer
 ==============================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soldotno/sol-common-footer.svg?token=8df8234708883ad475a7e9272b9d8f57824586d24311183f7a230c492179083d)](https://greenkeeper.io/)
+
 This is our standard footer
 It uses react.
 
